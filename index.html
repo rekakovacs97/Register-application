@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main-container">
+        <div class="register-container">
+            <div class="register-window">
+                <h1 class="style-h1-register-window">Welcome to Acme.</h1>
+                <h2 class="style-h2-register-window">Create your account by filling the form bellow.</h2>
+                <form onsubmit="login(event)">
+                    <div class="style-label-input-email">
+                        <label  class="style-email" for="email">Email</label> <br>
+                        <input class="style-input-email  input-focus" type="email" id="email" name="email"> <br>
+                    </div>
+                    <label class="style-password " for="pwd">Password</label> <br>
+                    <div class="password-container">
+                        <input class="style-input-password input-focus" type="password" id="passwordInput" name="pwd" > <br>
+                        <div class="eye-slash-icon" id="eyeslashIcon" onclick="onHidePassword()"></div>
+                        <div class="eye-icon show-icon" id="eyeIcon" onclick="onShowPassword()"></div>
+                        <div class="meter">
+                            <div class="meter-wrapp">
+                                <div class="meter-level" id="meter-good"></div>
+                                <div class="meter-level" id="meter-ok"></div>
+                                <div class="meter-level" id="meter-weak" ></div>
+                                <div class="meter-level" id="meter-weakest"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="style-input-label-remembering">
+                        <input class="style-checkbox" type="checkbox" id="circle" name="circle">
+                        <label class="style-label" for="checkbox">Remember me.</label> <br>
+                    </div>
+                    <button class="style-button-sign-up" type="submit" class="signupbtn">Sign up</button>
+                </form>
+            </div>
+            <div class="style-links">
+                <span>2015 Acme, Inc</span>
+                <a class="style-a" href="">Terms</a>
+                <a class="style-a" href="">Privacy</a>
+                <a class="style-a" href="">...</a>
+            </div>
+        </div>
+        <div class="login-container" >
+            <div class="login-container-wrapp">
+                <img class="style-img" src="pictures/acme.png" alt="">
+                <h2 class="style-h2-login-container-wrapp">Do you already have an account?</h2>
+                <p class="style-p"> That's awesome! You can login by clicking on this button below. to skip this next time, you can 
+                    ask us to remember your login credentials.</p>
+                <button class="style-button-login" type="submit">Login</button>
+            </div> 
+        </div>
+    </section>
+    <script src="js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+</body>
+</html>

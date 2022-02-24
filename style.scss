@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+//colors
+$lightgrey: #f9f9f9;
+$white: #FFFFFF;
+$grey: #757575;
+$greyforborder: #f3f0f0;
+$light-ligthgrey: #A1A1A1;
+$blue: #4A90E2;
+$border-color: #ddd;
+
+//fonts
+$opensans : "Open Sans";
+$apple-system :  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+body {
+    margin: 0;
+}
+.main-container {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+
+    .register-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        background-color: $lightgrey;
+
+        .register-window {
+            margin: 0 auto;
+            width: 43%;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            background-color: $white;
+            padding: 5px 15px 15px 25px;
+            border-radius: 3%;
+            border: 3px solid $greyforborder;
+            padding: 15px 40px;
+            
+            .style-h1-register-window {
+                font-size: 30px;
+                color: $grey;
+                font-weight: 600;
+                font-family: $opensans;
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+
+            .style-h2-register-window {
+                font-size: 15px;
+                color: $light-ligthgrey;
+                font-weight: 600;
+                font-family: $opensans;
+            }
+            .style-label-input-email {
+                margin-top: 30px;
+                margin-bottom: 25px; 
+
+                .style-email {
+                    font-family: $apple-system; 
+                    font-size: 14px;
+                    color: $light-ligthgrey;
+                }
+
+                .style-input-email{
+                    font-family: $apple-system;
+                    font-size: 17px;
+                    color: $grey;
+                    border: none;
+                    border-bottom: 1px solid $light-ligthgrey;
+                    width: 90%;
+                }
+            }
+            
+            .input-focus {
+                background-color: none;
+            }
+
+            input:focus, select:focus{
+                outline: none;
+                border-bottom: 1px solid $light-ligthgrey;
+            }
+
+            .password-container{
+                margin-bottom: 15px;
+            }
+
+            .eye-slash-icon::after{ 
+                content: url(pictures/fa-eye-slash.png);
+                position: absolute;
+                bottom: 0px;
+                right: 40px;
+            }
+
+            .eye-icon, 
+            .eye-slash-icon {
+                position: relative;
+                display: none;
+            }
+
+            .show-icon {
+                display: block;
+            }
+
+            .eye-icon::after {
+                content: url(pictures/eye.png);
+                position: absolute;
+                bottom: 0px;
+                right: 40px;
+            }   
+
+            .meter{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .meter-wrapp {
+                    position: absolute;
+                    bottom: 0;
+                    right: 30px;
+    
+                    .meter-level{
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        background-color: $grey;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+
+            .style-input-password{
+                font-family: $apple-system;
+                font-size: 17px;
+                color: $grey;
+                border: none;
+                border-bottom: 1px solid $light-ligthgrey;
+                width: 90%;
+            }
+
+            .style-password {
+                font-family: $apple-system;
+                font-size: 14px;
+                color: $blue;
+            }
+
+            .style-input-label-remembering {
+                margin-bottom: 20px;
+                position: relative;
+
+                .style-checkbox{
+                    width: 1.1em;
+                    height: 1.1em;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    border: 1px solid $border-color;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+
+                .style-checkbox:checked {
+                    background-color: $blue;
+                }
+
+                .style-label{
+                    font-family: $apple-system;
+                    font-size: 17px;
+                    color: $light-ligthgrey;
+                }
+            }
+           
+           .style-button-sign-up{            
+                background-color: $blue;
+                color: $white;
+                padding: 10PX 35px;
+                font-family: $opensans;
+                font-size: 15px;
+                border-radius: 7%;
+                border: none;
+                float: right;
+           }
+        }
+
+        .style-links{
+            font-family: $opensans;
+            font-size: 12px;
+            color: $light-ligthgrey;
+
+            .style-a {
+                text-decoration: none;
+                color: $light-ligthgrey;  
+                font-size: 13px;              
+            }
+        }
+    }
+
+    .style-links {
+        margin-bottom: 25px;
+    }
+
+    .login-container {
+        width: 50%;
+        background-image: url(pictures/suns.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        .login-container-wrapp {
+            width: 63%;
+            margin: 0 auto;
+            padding-top: 20px;
+
+            .style-h2-login-container-wrapp {
+                font-family: $opensans;
+                font-size: 30px;
+                color: $white;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .style-img {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+            .style-p {
+                font-family: $apple-system;
+                font-size: 22px;
+                color: $white;
+            }
+
+            .style-button-login{
+                padding: 5px 25px;
+                font-size: 15px;
+                background-color: transparent;
+                border: 2px solid $white;
+                border-radius: 9%;
+                color: $white;
+            }            
+        }
+    }
+}

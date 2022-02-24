@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.main-container .register-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  background-color: #f9f9f9;
+}
+
+.main-container .register-container .register-window {
+  margin: 0 auto;
+  width: 43%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  background-color: #FFFFFF;
+  padding: 5px 15px 15px 25px;
+  border-radius: 3%;
+  border: 3px solid #f3f0f0;
+  padding: 15px 40px;
+}
+
+.main-container .register-container .register-window .style-h1-register-window {
+  font-size: 30px;
+  color: #757575;
+  font-weight: 600;
+  font-family: "Open Sans";
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.main-container .register-container .register-window .style-h2-register-window {
+  font-size: 15px;
+  color: #A1A1A1;
+  font-weight: 600;
+  font-family: "Open Sans";
+}
+
+.main-container .register-container .register-window .style-label-input-email {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.main-container .register-container .register-window .style-label-input-email .style-email {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: #A1A1A1;
+}
+
+.main-container .register-container .register-window .style-label-input-email .style-input-email {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  color: #757575;
+  border: none;
+  border-bottom: 1px solid #A1A1A1;
+  width: 90%;
+}
+
+.main-container .register-container .register-window .input-focus {
+  background-color: none;
+}
+
+.main-container .register-container .register-window input:focus, .main-container .register-container .register-window select:focus {
+  outline: none;
+  border-bottom: 1px solid #A1A1A1;
+}
+
+.main-container .register-container .register-window .password-container {
+  margin-bottom: 15px;
+}
+
+.main-container .register-container .register-window .eye-slash-icon::after {
+  content: url(pictures/fa-eye-slash.png);
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+}
+
+.main-container .register-container .register-window .eye-icon,
+.main-container .register-container .register-window .eye-slash-icon {
+  position: relative;
+  display: none;
+}
+
+.main-container .register-container .register-window .show-icon {
+  display: block;
+}
+
+.main-container .register-container .register-window .eye-icon::after {
+  content: url(pictures/eye.png);
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+}
+
+.main-container .register-container .register-window .meter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.main-container .register-container .register-window .meter .meter-wrapp {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
+
+.main-container .register-container .register-window .meter .meter-wrapp .meter-level {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #757575;
+  margin-bottom: 5px;
+}
+
+.main-container .register-container .register-window .style-input-password {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  color: #757575;
+  border: none;
+  border-bottom: 1px solid #A1A1A1;
+  width: 90%;
+}
+
+.main-container .register-container .register-window .style-password {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: #4A90E2;
+}
+
+.main-container .register-container .register-window .style-input-label-remembering {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.main-container .register-container .register-window .style-input-label-remembering .style-checkbox {
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-container .register-container .register-window .style-input-label-remembering .style-checkbox:checked {
+  background-color: #4A90E2;
+}
+
+.main-container .register-container .register-window .style-input-label-remembering .style-label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  color: #A1A1A1;
+}
+
+.main-container .register-container .register-window .style-button-sign-up {
+  background-color: #4A90E2;
+  color: #FFFFFF;
+  padding: 10PX 35px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  border-radius: 7%;
+  border: none;
+  float: right;
+}
+
+.main-container .register-container .style-links {
+  font-family: "Open Sans";
+  font-size: 12px;
+  color: #A1A1A1;
+}
+
+.main-container .register-container .style-links .style-a {
+  text-decoration: none;
+  color: #A1A1A1;
+  font-size: 13px;
+}
+
+.main-container .style-links {
+  margin-bottom: 25px;
+}
+
+.main-container .login-container {
+  width: 50%;
+  background-image: url(pictures/suns.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.main-container .login-container .login-container-wrapp {
+  width: 63%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.main-container .login-container .login-container-wrapp .style-h2-login-container-wrapp {
+  font-family: "Open Sans";
+  font-size: 30px;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-container .login-container .login-container-wrapp .style-img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.main-container .login-container .login-container-wrapp .style-p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+.main-container .login-container .login-container-wrapp .style-button-login {
+  padding: 5px 25px;
+  font-size: 15px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 9%;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=style.css.map */
